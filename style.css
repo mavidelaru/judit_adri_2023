@@ -1,0 +1,40 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+}
+.main-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #E3D0CC;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.stay,
+.tuned {
+    text-transform: uppercase;
+    font-family: 'Vollkorn', serif;
+    font-size: 10rem;
+    color: #EBE0DE;
+    height: 171px;
+}
+.dinamic_letters{
+    position: relative;
+    top: -214px;    
+    display: flex;
+}
+.coming,
+.soon {
+    display: flex;
+    align-items: center;
+}
+.soon{
+    margin-left: 31px;
+}
+.coming svg,
+.soon svg {
+    margin-left: -5px;
+}
+
