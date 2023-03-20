@@ -413,7 +413,6 @@ margin-top: 10px;
    Vino
   ****/
   .__vino{
-    max-height: 70vh;
     background-color: #E9E2E1;
     padding: 30px auto;
   }
@@ -423,6 +422,11 @@ margin-top: 10px;
   }
   .__vino .info_box_right img{
 border: 11px solid white;
+height: 50vh;
+  }
+  .first_img{
+    margin: -75spx 0px auto;  
+
   }
   .second_img{
     margin: -128px -36px auto;  
