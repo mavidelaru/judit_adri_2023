@@ -286,11 +286,12 @@ padding-right: 60px;
 }
 .__nuestra_historia p,
 .__vino-text p,
+.info__form p,
 .__music p {
   margin: 10px 0px;
   z-index: 1;
 }
-.boton_music {
+.boton {
 
   text-align: center;
 
@@ -299,23 +300,38 @@ padding-right: 60px;
 
 
 
-.boton_music a{
+.boton a{
   display:inline-block;
   padding:0.35em 1.2em;
-  border:0.1em solid #FFFFFF;
   margin:0 0.3em 0.3em 0;
   border-radius:0.12em;
   box-sizing: border-box;
   text-decoration:none;
 font-family:'Roboto',sans-serif;
   font-weight:300;
-  color:#FFFFFF;
   text-align:center;
   transition: all 0.2s;
+  font-weight: 400;
   }
-  .boton_music a:hover{
+  .boton._music a:hover{
 color:#000000;
   background-color:#FFFFFF;
+  }
+  .boton._form a:hover{
+    color:white;
+      background-color:black;
+      }
+  ._button_form_wrapper{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .boton._music a{
+    color:#FFFFFF;
+    border:0.15em solid #FFFFFF;
+  }
+  .boton._form a{
+    color:#000000;
+    border:0.15em solid #000000;
   }
 
 
@@ -421,7 +437,15 @@ border-radius: 20px; */
 .info__form {
   padding-bottom: 25px;
   background-color: #eeeceb;
+  text-align: center;
+  padding: 20px 20vw 76px;
 }
+
+.info__form img {
+  max-width: 19vw;
+  margin: auto;
+}
+
 
 /***
   Location
@@ -523,7 +547,6 @@ border-radius: 20px; */
   width: 50%;
   text-align: center;
   height: 20vh;
-  text-align: justify;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -534,6 +557,14 @@ border-radius: 20px; */
 .content-wrapper.__music p {
   position: relative;
   z-index: 1;
+}
+.content-wrapper.__music h2{
+  text-align: left;
+}
+
+.content-wrapper.__music p {
+  text-align: justify;
+
 }
 .content-wrapper.__music img {
   margin: -17vh;
@@ -547,7 +578,7 @@ border-radius: 20px; */
 
 @media only screen and (max-width: 600px) {
   .intro__text__titulo {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .__letras {
     max-height: 30vh;
@@ -560,7 +591,8 @@ border-radius: 20px; */
     left: 92px;
   }
   .intro__text__subtitulo{
-    letter-spacing: 9px;
+    letter-spacing: 4px;
+    font-size: 21px;
   }
   .__nuestra_historia,
   .info_box_left {
@@ -568,10 +600,15 @@ border-radius: 20px; */
     padding-right: 0px;
   }
   .__nuestra_historia,
-  .__vino-text{
+  .__vino-text,
+  .info__form p{
     padding: 0px 15px;
-  }
 
+  }
+  .info__form{
+    text-align: justify;
+    padding: 20px 10px 76px;
+  }
   .info_box__wrapper {
     padding: 20px 10px;
     flex-direction: column;
@@ -579,7 +616,20 @@ border-radius: 20px; */
   }
   .info_box_right {
     max-width: inherit;
-    display: none;
+    /* display: none; */
+  }
+  .__vino{
+    flex-direction: column-reverse;
+  }
+  .__vino_pictures{
+    max-width: inherit;
+    max-height: inherit;
+  }
+  .__vino .info_box_right img {
+    border: none;
+    height: auto;
+    position: inherit;
+    margin: 10px 0;
   }
 
   .__vino .info_box_right {
@@ -605,6 +655,11 @@ border-radius: 20px; */
     border-right: 0px solid white;
     padding: 1.25rem 0rem;
   }
+  .info__form img {
+    max-width: 61vw;
+  }
+
+
 }
 /* For tablets: */
 @media screen and (min-device-width: 600px) and (max-device-width: 1136px) {
